@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "My personal portfolio website built with Next.js and TypeScript.",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "link": "https://github.com/vatsalgandhi83/portfolio-vkg"
+  },
+  {
+    "title": "E-commerce Store",
+    "description": "A full-featured e-commerce store built with the MERN stack.",
+    "tags": ["React", "Node.js", "MongoDB", "Express"],
+    "link": "https://github.com/vatsalgandhi83/mern-ecommerce"
+  }
+]
