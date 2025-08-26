@@ -1,0 +1,30 @@
+[
+  {
+    "company": "Tech Solutions Inc.",
+    "positions": [
+      {
+        "title": "Software Engineer",
+        "duration": "Jan 2022 - Present",
+        "description": [
+          "Developed and maintained web applications using React, Node.js, and MongoDB.",
+          "Collaborated with cross-functional teams to deliver high-quality software products.",
+          "Implemented RESTful APIs and integrated with third-party services."
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Web Wizards LLC",
+    "positions": [
+      {
+        "title": "Junior Developer",
+        "duration": "Jun 2020 - Dec 2021",
+        "description": [
+          "Assisted in the development of e-commerce websites using Shopify and WordPress.",
+          "Created and maintained custom themes and plugins.",
+          "Provided technical support to clients."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "skillType": "Programming Languages",
+    "skills": ["JavaScript", "TypeScript", "Python"]
+  },
+  {
+    "skillType": "Frameworks & Libraries",
+    "skills": ["React", "Next.js", "Node.js", "Express", "Tailwind CSS"]
+  },
+  {
+    "skillType": "Databases",
+    "skills": ["MongoDB", "PostgreSQL", "MySQL"]
+  },
+  {
+    "skillType": "Tools & Platforms",
+    "skills": ["Docker", "Kubernetes", "Git", "GitHub", "Jira"]
+  }
+]
