@@ -1,3 +1,13 @@
+:root {
+  --background: #F6F6F2;
+  --text: #22577A;
+  --primary: #9e8885; /* Using text color for primary for now */
+  --secondary: #e0e0e0; /* A light grey for secondary elements */
+  --background-translucent: rgba(246, 246, 242, 0.8);
+  --button-background: #22577A;
+  --button-text: #F6F6F2;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,4 +15,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text);
 }
