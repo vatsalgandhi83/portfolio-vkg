@@ -1,0 +1,11 @@
+.footer {
+  border-top: 1px solid #e5e7eb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem; /* Reduced padding for a thinner footer */
+  text-align: center;
+  color: #6b7280;
+}
