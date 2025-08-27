@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from '@/styles/Header.module.css';
-import { Home, GraduationCap, Wrench, FolderGit2, Briefcase, FileText, Mail } from 'lucide-react';
+import { Home, GraduationCap, Wrench, FolderGit2, Briefcase, FileText } from 'lucide-react';
 
 const Header = () => {
   const pathname = usePathname();
@@ -14,7 +14,6 @@ const Header = () => {
     { href: "/projects", text: "Projects", icon: FolderGit2 },
     { href: "/experience", text: "Experience", icon: Briefcase },
     { href: "/resume", text: "Resume", icon: FileText },
-    { href: "/contact", text: "Contact", icon: Mail },
   ];
 
   return (
