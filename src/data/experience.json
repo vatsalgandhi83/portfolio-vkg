@@ -3,6 +3,15 @@
     "company": "Tech Solutions Inc.",
     "positions": [
       {
+        "title": " Senior Software Engineer",
+        "duration": "Jan 2022 - Present",
+        "description": [
+          "Developed and maintained web applications using React, Node.js, and MongoDB.",
+          "Collaborated with cross-functional teams to deliver high-quality software products.",
+          "Implemented RESTful APIs and integrated with third-party services."
+        ]
+      },
+      {
         "title": "Software Engineer",
         "duration": "Jan 2022 - Present",
         "description": [
