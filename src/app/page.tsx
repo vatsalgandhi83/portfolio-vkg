@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className={styles.homeGrid}>
       <div className={styles.textContainer}>
-        <AnimatedName name="Vatsal Gandhi" />
+        <AnimatedName name={userData.name} />
         <TypeAnimation
           sequence={userData.animationSequence}
           wrapper="p"
@@ -85,8 +85,8 @@ export default function Home() {
       </div>
       <div className={styles.imageContainer}>
         <Image
-          src="/profile.jpeg"
-          alt="Vatsal Gandhi"
+          src={userData.avatar}
+          alt={userData.name}
           width={300}
           height={300}
           className={styles.profileImage}

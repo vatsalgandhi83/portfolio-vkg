@@ -6,6 +6,7 @@ import skills from './skills.json';
 export const userData = {
   name: "Vatsal Gandhi",
   title: "Full Stack Developer",
+  avatar: "/profile.jpeg",
   email: "vats.gandhi.83@gmail.com",
   socials: [
     {
