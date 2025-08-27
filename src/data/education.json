@@ -1,0 +1,44 @@
+[
+  {
+    "institution": "San Jose State University",
+    "degree": "MS in Software Engineering",
+    "dates": "Jan 2025 - Dec 2026 (Expected)",
+    "location": "San Jose, CA",
+    "gpa": "3.85",
+    "logo": "/sjsu-logo.svg",
+    "coursework": [
+      "Enterprise Software Platforms",
+      "Software Systems Engineering",
+      "Enterprise Distributed Systems",
+      "Enterprise Application Development",
+      "Data Mining",
+      "Machine Learning",
+      "Deep Learning"
+    ]
+  },
+  {
+    "institution": "Kalinga Institute of Industrial Technology",
+    "degree": "B. Tech in Computer Science and Engineering",
+    "dates": "Oct 2020 - May 2024",
+    "location": "Bhubaneswar, Odisha, India",
+    "gpa": "3.94 (9.31/10)",
+    "logo": "/kiit-logo.svg",
+    "coursework": [
+      "Computer Programming",
+      "Data Structures",
+      "Design and Analysis of Algorithms",
+      "Object-Oriented Programming",
+      "Compiler Design",
+      "High Performance Computing",
+      "Operating Systems",
+      "Database Management Systems",
+      "Web Development",
+      "Computer Networks",
+      "Cloud Computing",
+      "Big Data",
+      "Artificial Intelligence",
+      "Data Analytics",
+      "Statistics"
+    ]
+  }
+]

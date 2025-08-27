@@ -1,0 +1,127 @@
+.page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 3rem; /* Space for the timeline */
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  background-color: var(--text-secondary);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+  background-color: var(--background-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  align-items: flex-start;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.cardContent {
+  flex-grow: 1;
+}
+
+.cardContent > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem; /* (padding-left of .content - icon width) / 2 - icon width / 2 */
+  top: 1.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 2px solid var(--background);
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.cardDates {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.cardSubtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.gpa {
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.coursework {
+  margin-top: 1rem;
+}
+
+.coursework strong {
+  color: var(--text);
+}
+
+.courseList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  color: var(--text-secondary);
+}
+
+.courseList li {
+  font-size: 0.95rem;
+}

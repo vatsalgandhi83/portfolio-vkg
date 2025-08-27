@@ -1,5 +1,6 @@
 import { Github, Linkedin, Code, Mail, Phone } from "lucide-react";
 import projects from './projects.json';
+import education from './education.json'
 import experience from './experience.json';
 import skills from './skills.json';
 
@@ -49,6 +50,7 @@ export const userData = {
     "I'm a Problem Solver",
     ANIMATION_DELAY,
   ],
+  education,
   projects,
   experience,
   skills,
