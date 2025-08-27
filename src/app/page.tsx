@@ -1,11 +1,16 @@
-import { userData } from "@/data/user";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import styles from "@/styles/Layout.module.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>{userData.name}</h1>
-      <p>{userData.title}</p>
-    </main>
+    <div className={styles.wrapper}>
+      <Header />
+      <main className={styles.main}>
+        <h1>Welcome to my portfolio</h1>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
