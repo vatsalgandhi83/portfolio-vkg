@@ -3,6 +3,8 @@ import projects from './projects.json';
 import experience from './experience.json';
 import skills from './skills.json';
 
+const ANIMATION_DELAY = 1000;
+
 export const userData = {
   name: "Vatsal Gandhi",
   title: "Full Stack Developer",
@@ -39,13 +41,13 @@ export const userData = {
     "I am a passionate full-stack developer with a knack for creating elegant and efficient solutions. I have a strong foundation in both front-end and back-end technologies, and I am always eager to learn new things.",
   animationSequence: [
     "I'm a Software Developer",
-    1000,
+    ANIMATION_DELAY,
     "I'm a Full-Stack Engineer",
-    1000,
+    ANIMATION_DELAY,
     "I'm a Tech Enthusiast",
-    1000,
+    ANIMATION_DELAY,
     "I'm a Problem Solver",
-    1000,
+    ANIMATION_DELAY,
   ],
   projects,
   experience,
