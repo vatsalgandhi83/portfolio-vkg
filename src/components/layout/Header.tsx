@@ -1,24 +1,40 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from '@/styles/Header.module.css';
 import { Home, GraduationCap, Wrench, FolderGit2, Briefcase, FileText, Mail } from 'lucide-react';
 
 const Header = () => {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: "/education", text: "Education", icon: GraduationCap },
+    { href: "/skills", text: "Skills", icon: Wrench },
+    { href: "/projects", text: "Projects", icon: FolderGit2 },
+    { href: "/experience", text: "Experience", icon: Briefcase },
+    { href: "/resume", text: "Resume", icon: FileText },
+    { href: "/contact", text: "Contact", icon: Mail },
+  ];
+
   return (
     <div className={styles.header}>
       <header className={styles.container}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href="/" className={pathname === '/' ? styles.active : ''}>
             <Home className={styles.icon} /> Home
           </Link>
         </div>
         <nav className={styles.nav}>
           <div className={styles.navList}>
-            <Link href="#education" className={styles.navLink}><GraduationCap className={styles.icon} /> Education</Link>
-            <Link href="#skills" className={styles.navLink}><Wrench className={styles.icon} /> Skills</Link>
-            <Link href="#projects" className={styles.navLink}><FolderGit2 className={styles.icon} /> Projects</Link>
-            <Link href="#experience" className={styles.navLink}><Briefcase className={styles.icon} /> Experience</Link>
-            <Link href="#resume" className={styles.navLink}><FileText className={styles.icon} /> Resume</Link>
-            <Link href="#contact" className={styles.navLink}><Mail className={styles.icon} /> Contact</Link>
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link key={link.href} href={link.href} className={`${styles.navLink} ${isActive ? styles.active : ''}`}>
+                  <link.icon className={styles.icon} /> {link.text}
+                </Link>
+              );
+            })}
           </div>
         </nav>
       </header>
