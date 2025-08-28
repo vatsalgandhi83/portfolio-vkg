@@ -1,5 +1,41 @@
 [
   {
+    "title": "TravelSwarm AI-Powered Travel Planner",
+    "description": "A distributed backend system enabling LLM-driven itinerary planning with asynchronous user interactions using Crew AI and Google Vertex AI (Gemini).",
+    "highlights": [
+      "Designed microservices in Java (Spring Boot) and Python (Flask), integrated via RabbitMQ.",
+      "Utilized Google Vertex AI (Gemini) and Crew AI for intelligent, agent-based planning.",
+      "Persisted state with PostgreSQL and containerized all services with Docker for portability.",
+      "Implemented automated CI/CD pipelines for builds and deployments."
+    ],
+    "tags": ["Java", "Spring Boot", "Python", "RabbitMQ", "Docker", "Google Vertex AI", "CrewAI"],
+    "link": "https://github.com/vatsalgandhi83"
+  },
+  {
+    "title": "SJ Hopes Shelter Coordination Platform",
+    "description": "A real-time coordination platform for shelters and support staff, featuring live task workflows and geolocation-based availability updates. Won 2nd Prize at SJ Hacks Hackathon.",
+    "highlights": [
+      "Engineered a full-stack, microservices-oriented platform using Java (Spring Boot) and MySQL.",
+      "Delivered a polished, user-centric product recognized for its impact and scalability.",
+      "Developed a responsive frontend with React, Next.js, and TypeScript.",
+      "Enhanced observability with application logging and performance metrics."
+    ],
+    "tags": ["Java", "Spring Boot", "React", "Next.js", "TypeScript", "MySQL", "Google Maps API"],
+    "link": "https://github.com/vatsalgandhi83"
+  },
+  {
+    "title": "BookTable Restaurant Booking System",
+    "description": "A full-stack, cloud-native restaurant booking system supporting high-concurrency real-time search, reservations, and admin workflows.",
+    "highlights": [
+      "Developed backend services with Java (Spring Boot) and a NoSQL database (MongoDB).",
+      "Deployed with a full CI/CD pipeline and autoscaling on AWS (EC2, ALB, ASG, ECR).",
+      "Built a responsive user interface using ReactJS.",
+      "Ensured consistent performance under varying workloads through cloud-native design."
+    ],
+    "tags": ["Java", "Spring Boot", "ReactJS", "MongoDB", "AWS", "Docker", "GitHub Actions"],
+    "link": "https://github.com/vatsalgandhi83"
+  },
+  {
     "title": "Portfolio Website",
     "description": "My personal portfolio website built with Next.js and TypeScript.",
     "highlights": [
@@ -11,18 +47,5 @@
     ],
     "tags": ["Next.js", "TypeScript", "Tailwind CSS"],
     "link": "https://github.com/vatsalgandhi83/portfolio-vkg"
-  },
-  {
-    "title": "E-commerce Store",
-    "description": "A full-featured e-commerce store built with the MERN stack.",
-    "highlights": [
-      "Full-stack application with React frontend and Node.js backend",
-      "User authentication and authorization system",
-      "Shopping cart functionality with persistent state",
-      "Payment integration with secure checkout process",
-      "Admin dashboard for inventory and order management"
-    ],
-    "tags": ["React", "Node.js", "MongoDB", "Express"],
-    "link": "https://github.com/vatsalgandhi83/mern-ecommerce"
   }
 ]

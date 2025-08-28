@@ -1,37 +1,18 @@
 [
   {
-    "company": "Tech Solutions Inc.",
+    "company": "Equal Identity Pvt. Ltd.",
     "positions": [
       {
-        "title": " Senior Software Engineer",
-        "duration": "Jan 2022 - Present",
+        "title": "Software Engineering Intern",
+        "duration": "Sep 2023 - Nov 2024",
         "description": [
-          "Developed and maintained web applications using React, Node.js, and MongoDB.",
-          "Collaborated with cross-functional teams to deliver high-quality software products.",
-          "Implemented RESTful APIs and integrated with third-party services."
-        ]
-      },
-      {
-        "title": "Software Engineer",
-        "duration": "Jan 2022 - Present",
-        "description": [
-          "Developed and maintained web applications using React, Node.js, and MongoDB.",
-          "Collaborated with cross-functional teams to deliver high-quality software products.",
-          "Implemented RESTful APIs and integrated with third-party services."
-        ]
-      }
-    ]
-  },
-  {
-    "company": "Web Wizards LLC",
-    "positions": [
-      {
-        "title": "Junior Developer",
-        "duration": "Jun 2020 - Dec 2021",
-        "description": [
-          "Assisted in the development of e-commerce websites using Shopify and WordPress.",
-          "Created and maintained custom themes and plugins.",
-          "Provided technical support to clients."
+          "Developed and maintained scalable, production-grade microservices using Python (FastAPI) for high-traffic, business-critical workflows.",
+          "Built and deployed containerized services with Docker and AWS (ECR, ECS Fargate), integrated into automated CI/CD pipelines.",
+          "Designed and deployed distributed, event-driven data pipelines on AWS, reducing manual reporting effort by 90%.",
+          "Provisioned fault-tolerant, multi-environment cloud infrastructure using Java and AWS CDK, improving deployment consistency and system resilience.",
+          "Implemented proactive monitoring and alerting with AWS CloudWatch, reducing incident response times by 50%.",
+          "Refactored a latency-sensitive analytics API, applying OOP and modular design to achieve a 43% reduction in average response time.",
+          "Improved a face-matching model's F1 score from 70% to 93% through algorithm refinement and data tuning."
         ]
       }
     ]
