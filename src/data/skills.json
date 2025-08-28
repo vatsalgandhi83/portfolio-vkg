@@ -1,18 +1,38 @@
 [
   {
     "skillType": "Programming Languages",
-    "skills": ["JavaScript", "TypeScript", "Python"]
+    "skills": ["Python", "Java", "C++", "JavaScript", "TypeScript", "Go", "Bash", "HTML", "CSS"]
+  },
+  {
+    "skillType": "Backend & Distributed Systems",
+    "skills": ["Distributed Systems", "Microservices", "Event-Driven Architecture", "Scalable System Design", "API Design"]
   },
   {
     "skillType": "Frameworks & Libraries",
-    "skills": ["React", "Next.js", "Node.js", "Express", "Tailwind CSS"]
+    "skills": ["FastAPI", "Spring Boot", "Node.js", "Express.js", "Flask", "React.js", "Material-UI", "RabbitMQ"]
   },
   {
     "skillType": "Databases",
-    "skills": ["MongoDB", "PostgreSQL", "MySQL"]
+    "skills": ["MySQL", "PostgreSQL", "MongoDB", "DynamoDB"]
+  },
+  {
+    "skillType": "Cloud & DevOps",
+    "skills": ["AWS", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "AWS CodePipeline", "Infrastructure as Code", "Swagger/OpenAPI"]
+  },
+  {
+    "skillType": "Observability",
+    "skills": ["Unix/Linux Environments", "AWS CloudWatch", "Tracing & Dashboards"]
+  },
+  {
+    "skillType": "Machine Learning",
+    "skills": ["TensorFlow (Keras)", "PyTorch", "Pandas", "Numpy", "VectorDB (Pinecone)"]
   },
   {
     "skillType": "Tools & Platforms",
-    "skills": ["Docker", "Kubernetes", "Git", "GitHub", "Jira"]
+    "skills": ["Git", "IntelliJ", "Postman", "JIRA", "JUnit"]
+  },
+  {
+    "skillType": "Other Skills",
+    "skills": ["Agile Development", "Collaboration", "Problem Solving"]
   }
 ]
