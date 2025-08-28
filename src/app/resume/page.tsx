@@ -7,7 +7,7 @@ export default function Resume() {
   return (
     <div className={styles.page}>
       <h1 className={styles.title}>Resume</h1>
-      <div className={styles.content}>
+      <div className={styles.resumeContent}>
         <div className={styles.resumeCard}>
           <div className={styles.cardContent}>
             <div className={styles.resumeHeader}>
@@ -42,7 +42,7 @@ export default function Resume() {
 
             <div className={styles.resumeViewer}>
               <iframe
-                src={`${resumeUrl}#toolbar=0&navpanes=0&scrollbar=0`}
+                src={`${resumeUrl}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
                 className={styles.resumeFrame}
                 title="Resume PDF Viewer"
               />

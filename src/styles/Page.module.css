@@ -79,51 +79,81 @@
 }
 
 .cardTitle {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.cardSubtitle {
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.gpa {
   font-weight: 600;
   color: var(--text);
-  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .cardDates {
   font-family: var(--font-mono);
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.4;
-}
-
-.cardSubtitle {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  line-height: 1.4;
-}
-
-.gpa {
   font-weight: 500;
-  color: var(--text);
-  line-height: 1.4;
+  margin-bottom: 0.75rem;
 }
 
 .coursework {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
 }
 
 .coursework strong {
   color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  display: block;
 }
 
 .courseList {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  color: var(--text-secondary);
+  gap: 0.5rem;
 }
 
 .courseList li {
-  font-size: 0.95rem;
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.courseList li:hover {
+  background-color: var(--primary);
+  color: var(--background);
+  border-color: var(--primary);
+  transform: translateY(-1px);
 }
 
 /* Skills Section Styles */
@@ -209,14 +239,6 @@
 }
 
 /* Experience Section Styles */
-.positionContainer {
-  margin-bottom: 1.5rem;
-}
-
-.positionContainer:last-child {
-  margin-bottom: 0;
-}
-
 .positionHeader {
   display: flex;
   justify-content: space-between;
@@ -227,7 +249,7 @@
 
 .positionTitle {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text);
   margin: 0;
 }
@@ -246,6 +268,68 @@
 
 .experienceList li:last-child {
   margin-bottom: 0;
+}
+
+/* Internal Timeline Styles for Multiple Positions */
+.internalTimeline {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.internalTimeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #e2e8f0; /* Solid gray color for visibility */
+  z-index: 1;
+}
+
+.singlePosition {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.singlePosition::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #e2e8f0; /* Same gray color as multi-position timeline */
+  z-index: 1;
+}
+
+.positionContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.positionContainer:last-child {
+  margin-bottom: 0;
+}
+
+.positionTimelineDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 3px solid var(--background);
+  box-shadow: 0 0 0 2px var(--primary);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  z-index: 2;
+  position: relative;
+}
+
+.positionContent {
+  flex: 1;
 }
 
 /* Resume Section Styles */
@@ -327,6 +411,7 @@
   overflow: hidden;
   background-color: var(--background-light);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .resumeFrame {
@@ -334,6 +419,7 @@
   height: 100%;
   border: none;
   background-color: white;
+  margin: 0 auto;
 }
 
 .resumeFallback {
@@ -508,4 +594,57 @@
 .resumeCard:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-5px);
+}
+
+/* Resume Content - no timeline or left padding */
+.resumeContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 0; /* No space needed for timeline */
+}
+
+/* Education Header Styles */
+.educationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.educationInfo {
+  flex: 1;
+}
+
+.educationActions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.25rem;
+}
+
+.transcriptButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  color: var(--background);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transcriptButton:hover {
+  background-color: var(--background);
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }

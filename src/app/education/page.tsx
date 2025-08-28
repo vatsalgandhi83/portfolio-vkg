@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/Page.module.css';
 import { userData } from '@/data/user';
+import { ExternalLink } from 'lucide-react';
 
 export default function Education() {
   return (
@@ -21,12 +22,31 @@ export default function Education() {
               </div>
             )}
             <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>{edu.institution}</h2>
-              <p className={styles.cardSubtitle}>{edu.degree}</p>
-              {edu.gpa && <p className={styles.gpa}>GPA: {edu.gpa}</p>}
-              <p className={styles.cardDates}>
-                {edu.dates} • {edu.location}
-              </p>
+              <div className={styles.educationHeader}>
+                <div className={styles.educationInfo}>
+                  <h2 className={styles.cardTitle}>{edu.institution}</h2>
+                  <p className={styles.cardSubtitle}>{edu.degree}</p>
+                  {edu.gpa && <p className={styles.gpa}>GPA: {edu.gpa}</p>}
+                  <p className={styles.cardDates}>
+                    {edu.dates} • {edu.location}
+                  </p>
+                </div>
+                
+                {edu.transcriptUrl && (
+                  <div className={styles.educationActions}>
+                    <a 
+                      href={edu.transcriptUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${styles.transcriptButton} ${styles.viewButton}`}
+                    >
+                      <ExternalLink size={18} />
+                      View Transcripts
+                    </a>
+                  </div>
+                )}
+              </div>
+              
               {edu.coursework && (
                 <div className={styles.coursework}>
                   <strong>Relevant Coursework:</strong>

@@ -5,7 +5,8 @@
     "dates": "Jan 2025 - Dec 2026 (Expected)",
     "location": "San Jose, CA",
     "gpa": "3.85",
-    "logo": "/sjsu-logo.svg",
+    "logo": "/sjsu-logo.jpeg",
+    "transcriptUrl": "/sjsu-transcript.pdf",
     "coursework": [
       "Enterprise Software Platforms",
       "Software Systems Engineering",
@@ -22,7 +23,8 @@
     "dates": "Oct 2020 - May 2024",
     "location": "Bhubaneswar, Odisha, India",
     "gpa": "3.94 (9.31/10)",
-    "logo": "/kiit-logo.svg",
+    "logo": "/kiit-logo.jpeg",
+    "transcriptUrl": "/kiit-transcript.pdf",
     "coursework": [
       "Computer Programming",
       "Data Structures",
