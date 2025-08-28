@@ -10,19 +10,26 @@ export default function Experience() {
           <div key={index} className={styles.card}>
             <div className={styles.cardContent}>
               <h2 className={styles.cardTitle}>{job.company}</h2>
-              {job.positions.map((position, posIndex) => (
-                <div key={posIndex} className={styles.positionContainer}>
-                  <div className={styles.positionHeader}>
-                    <h3 className={styles.positionTitle}>{position.title}</h3>
-                    <p className={styles.cardDates}>{position.duration}</p>
+              
+              {/* Internal timeline for positions */}
+              <div className={job.positions.length > 1 ? styles.internalTimeline : styles.singlePosition}>
+                {job.positions.map((position, posIndex) => (
+                  <div key={posIndex} className={styles.positionContainer}>
+                    <div className={styles.positionTimelineDot}></div>
+                    <div className={styles.positionContent}>
+                      <div className={styles.positionHeader}>
+                        <h3 className={styles.positionTitle}>{position.title}</h3>
+                        <p className={styles.cardDates}>{position.duration}</p>
+                      </div>
+                      <ul className={styles.experienceList}>
+                        {position.description.map((item, itemIndex) => (
+                          <li key={itemIndex}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <ul className={styles.experienceList}>
-                    {position.description.map((item, itemIndex) => (
-                      <li key={itemIndex}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         ))}
