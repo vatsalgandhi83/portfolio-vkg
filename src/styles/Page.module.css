@@ -18,17 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-left: 3rem; /* Space for the timeline */
-}
-
-.content::before {
-  content: '';
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  bottom: 10px;
-  width: 3px;
-  background-color: var(--text-secondary);
+  padding-left: 0; /* No timeline needed */
 }
 
 .card {
@@ -59,18 +49,6 @@
 .cardContent > * {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  left: -2.5rem; /* (padding-left of .content - icon width) / 2 - icon width / 2 */
-  top: 1.5rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--primary);
-  border: 2px solid var(--background);
 }
 
 .card:hover {
@@ -575,34 +553,6 @@
   color: var(--text-secondary);
   font-size: 0.95rem;
   margin: 0;
-}
-
-/* Resume Card - no timeline dot */
-.resumeCard {
-  position: relative;
-  display: flex;
-  gap: 1.5rem;
-  background-color: var(--background-light);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  align-items: flex-start;
-}
-
-.resumeCard:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px);
-}
-
-/* Resume Content - no timeline or left padding */
-.resumeContent {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-left: 0; /* No space needed for timeline */
 }
 
 /* Education Header Styles */
