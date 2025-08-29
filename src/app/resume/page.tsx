@@ -7,8 +7,8 @@ export default function Resume() {
   return (
     <div className={styles.page}>
       <h1 className={styles.title}>Resume</h1>
-      <div className={styles.resumeContent}>
-        <div className={styles.resumeCard}>
+      <div className={styles.content}>
+        <div className={styles.card}>
           <div className={styles.cardContent}>
             <div className={styles.resumeHeader}>
               <div className={styles.resumeInfo}>
