@@ -36,6 +36,19 @@
     "link": "https://github.com/vatsalgandhi83"
   },
   {
+    "title": "Eventure - Event Management Platform",
+    "description": "A full-stack web application for event management, built collaboratively as a team project. The application allows users to browse, book, and manage events, while providing a dedicated portal for event managers to create and manage their listings.",
+    "highlights": [
+      "Developed backend REST APIs with Java (Spring Boot) and a NoSQL database (MongoDB).",
+      "Built a responsive user interface using React and Next.js.",
+      "Implemented secure user authentication with JSON Web Tokens (JWT).",
+      "Integrated the PayPal API for seamless and secure ticket sales.",
+      "Engineered features for real-time ticket availability tracking, automated email confirmations, and dynamic PDF ticket generation with QR codes."
+    ],
+    "tags": ["Java", "Spring Boot", "React", "Next.js", "MongoDB", "JWT", "PayPal API", "Apache PDFBox", "ZXing", "Tailwind CSS"],
+    "link": "https://github.com/vatsalgandhi83/eventure-ema"
+  },
+  {
     "title": "Portfolio Website",
     "description": "My personal portfolio website built with Next.js and TypeScript.",
     "highlights": [
