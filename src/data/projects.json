@@ -42,11 +42,20 @@
       "Developed backend REST APIs with Java (Spring Boot) and a NoSQL database (MongoDB).",
       "Built a responsive user interface using React and Next.js.",
       "Implemented secure user authentication with JSON Web Tokens (JWT).",
-      "Integrated the PayPal API for seamless and secure ticket sales.",
+      "Integrated the PayPal sandbox API to simulate the payment workflow for ticket booking.",
       "Engineered features for real-time ticket availability tracking, automated email confirmations, and dynamic PDF ticket generation with QR codes."
     ],
     "tags": ["Java", "Spring Boot", "React", "Next.js", "MongoDB", "JWT", "PayPal API", "Apache PDFBox", "ZXing", "Tailwind CSS"],
     "link": "https://github.com/vatsalgandhi83/eventure-ema"
+  },
+  {
+    "title": "Distinguishing Human and AI-Generated Voices Using PCA Analysis",
+    "description": "An analytical project to differentiate between human and AI-generated speech by preparing a unique dataset, extracting key audio features, and applying Principal Component Analysis (PCA) for dimensionality reduction.",
+    "highlights": [
+      "Analyzed human and AI-generated voices by preparing a dataset, extracting audio features, and applying Principal Component Analysis (PCA) for dimensionality reduction.",
+      "Utilized MATLAB and Python to visualize the separability of voice features in PCA space, demonstrating applied experience with MATLAB for analytical modeling and debugging."
+    ],
+    "tags": ["Python", "Google CoLab", "MATLAB", "PCA", "Data Analysis", "Feature Engineering"]
   },
   {
     "title": "Portfolio Website",
