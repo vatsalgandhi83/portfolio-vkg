@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js 14 and TypeScript, sho
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://your-portfolio-url.vercel.app) <!-- Update with your actual URL -->
+[View Live Portfolio](https://vatsalgandhi.vercel.app) <!-- Update with your actual URL -->
 
 ## 📋 Table of Contents
 
