@@ -8,9 +8,13 @@ import { Home, GraduationCap, Wrench, FolderGit2, Briefcase, FileText } from 'lu
 const Header = () => {
   const pathname = usePathname();
 
-  const navLinks = [
+  const firstRowLinks = [
+    { href: "/", text: "Home", icon: Home },
     { href: "/education", text: "Education", icon: GraduationCap },
     { href: "/skills", text: "Skills", icon: Wrench },
+  ];
+
+  const secondRowLinks = [
     { href: "/projects", text: "Projects", icon: FolderGit2 },
     { href: "/experience", text: "Experience", icon: Briefcase },
     { href: "/resume", text: "Resume", icon: FileText },
@@ -19,14 +23,19 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <header className={styles.container}>
-        <div className={styles.logo}>
-          <Link href="/" className={pathname === '/' ? styles.active : ''}>
-            <Home className={styles.icon} /> Home
-          </Link>
-        </div>
         <nav className={styles.nav}>
-          <div className={styles.navList}>
-            {navLinks.map((link) => {
+          <div className={styles.navRow}>
+            {firstRowLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link key={link.href} href={link.href} className={`${styles.navLink} ${isActive ? styles.active : ''}`}>
+                  <link.icon className={styles.icon} /> {link.text}
+                </Link>
+              );
+            })}
+          </div>
+          <div className={styles.navRow}>
+            {secondRowLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link key={link.href} href={link.href} className={`${styles.navLink} ${isActive ? styles.active : ''}`}>
