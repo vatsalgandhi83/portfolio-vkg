@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width: 793px) {
+@media (max-width: 794px) {
   .container {
     flex-direction: column;
     gap: 0.5rem;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 793px) {
+@media (max-width: 794px) {
   .nav {
     display: block;
     width: 100%;
@@ -103,7 +103,7 @@
   border-radius: 9999px;
 }
 
-@media (max-width: 793px) {
+@media (max-width: 794px) {
   .navLink {
     font-size: 0.75rem;
     padding: 0.4rem 0.8rem;
